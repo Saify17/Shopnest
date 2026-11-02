@@ -13,7 +13,7 @@ const [product, setProduct] = useState([])
 let dispatch = useDispatch();
 
 let apiProducts = ()=>{
-  axios.get("https://dummyjson.com/products")
+  axios.get("https://dummyjson.com/products?limit=50&skip=144")
   .then((res)=>res.data)
   .then((finalRes)=>{
     console.log(finalRes.products)
